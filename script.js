@@ -21,11 +21,8 @@ window.addEventListener('load', () => {
 // description of movie
 
 var words = [
-  'Hi i like HTML orem ipsum dolor ssed do eiusmod tempor incididu ed do eiusmod tempor inc  like HTML orem ipsum dolor ssed do eius',
-  'I also like css m dolor ssed do eiusmod tempor like HTML orem ipsum dolo ',
-  'Lorem ipsum dolor sit amet  like HTML orem ipsum dolor ssed do eius  like HTML orem ipsum dolor ssed do eius',
-  ' consectetur adipiscing elit  like HTML orem ipsum dolor ssed do eius',
-  'sed do eiusmod tempor incididunt  like HTML orem ipsum dolor ssed do eius'
+  'Loki is an American television series created by Michael Waldron for the streaming service Disney+, based on Marvel Comics.',
+  'The series takes place after the events of the film Avengers: Endgame (2019). ',
 ];
 var part,
     i = 0,
@@ -89,3 +86,10 @@ videoCards.forEach(item => {
     })
 })
 
+document.getElementById("login-button").addEventListener("click", function() {
+  document.getElementById("login-modal").style.display = "block";
+});
+
+document.querySelector(".close-button").addEventListener("click", function() {
+  document.getElementById("login-modal").style.display = "none";
+});
