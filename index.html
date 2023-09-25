@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotstar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="chatbot.js" defer></script>
 
 </head>
 
@@ -44,7 +47,7 @@
                 <li class="nav-items"><a href=""><i class="fa fa-baseball"
                             style="font-size: 20px;margin-right: 5px;"></i>Sports</a></li>
                 <li class="nav-items"><a href=""><i class="fa fa-gem"
-                            style="font-size: 20px;margin-right: 5px;"></i>primimum</a></li>
+                            style="font-size: 20px;margin-right: 5px;"></i>preminum</a></li>
             </ul>
 
             <div class="search-container">
@@ -55,7 +58,13 @@
                         </i></button>
                 </form>
             </div>
-            
+
+            <div class="watchlist">
+                <a href="#" class="watchlist-icon"><img src="images/bookmark.png" alt=""
+                        style="height: 23px; padding: 1px; background-color: rgb(235, 235, 224); margin-left: 20px; margin-top: 16px;"></a>
+
+            </div>
+
             <div class="login">
                 <span class="fa-solid fa-right-to-bracket" style="font-size: 20px;"></span>
                 <button id="login-button" class="Login-Button">Login</button>
@@ -76,8 +85,41 @@
 
 
         </div>
+<!--        
+        create a chatbot
+        <i class='bx bx-chat'></i>
+        
+        <button type="submit" style="background-color: aqua; font-size: 50px; margin:500px;color: azure;">hello</button>
+     -->
+     <!-- <div id="chatbot-icon">
+        <span> <a href="chatbot.html">go</a> </span>
 
+     </div>  -->
+ <div class="chatbot-container">
+     <button class="chatbot-toggler">
+        <span class="material-icons">mode_comment</span>
+        <span class="material-icons">close</span>
+    </button>
 
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close material-icons">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-icons">smart_toy</span>
+                <P>Hi there👋 <br>How can i help you today?</P>
+            </li>
+          
+        </ul>
+        <div class="chat-input">
+            <textarea  placeholder="Enter a message..." required></textarea>
+            <span id="send-btn"class="material-icons">send</span>
+        </div>
+    </div>
+</div>
+      
         <div class="carousel-container">
             <div class="carousel">
                 <div class="slider">
@@ -335,7 +377,70 @@
 
             </div>
         </div>
+
+        <!-- footer of the website -->
+
+        <div>
+            <footer id="mainFooter">
+                <div class="footer-content"></div>
+                <ul class="Footer-navbar" style="  display: flex;">
+                    <li>Company
+                        <ul class="Sub-footer-list" style="color: #afb1a5; margin-top: 70px;">
+                            <li>About Us</li>
+                            <li>Careers & Internships</li>
+                            <li>Privacy policy</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </li>
+                    <li>Contact Us
+                        <ul class="Sub-footer-list" style="color: #afb1a5; margin-top: 70px;">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
+                    </li>
+                    <li>View website in
+                        <ul class="Sub-footer-list" style="color: #afb1a5; margin-top: 70px;">
+                            <li><i class="fa-solid fa-check" style="margin-right: 6px;"></i>English</li>
+                            <li> <button type="button" class="btn btn-dark btn-lg Download-button"
+                                    style="font-size: 15px; padding: 5px; width: 100px;"><i class="fab fa-apple"></i>
+                                    Download</button></li>
+                            <li><button type="button" class="btn btn-outline-light btn-lg
+                              Download-button" style="font-size: 15px; padding: 5px; width: 100px;"><i
+                                        class="fab fa-google-play"></i>Download</button></li>
+                        </ul>
+                    </li>
+                    <li>Need Help?
+                        <ul class="Sub-footer-list" style="color: #afb1a5; margin-top: 70px;">
+                            <li>Visit help center</li>
+                            <li>Share Facebook</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p class="footer-paragraph"><span>&copy;</span>
+                        <NAME></NAME>copyrights reserved for all movies, tv series and anime content on this
+                        site.
+                    </p>
+                    <div class="footer-paragraph">
+                        <span>&copy;</span>
+                        <NAME>All rights reserved.Designed by <strong><em>Shubham Thorat</em>.</strong>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+
+
+
     </div>
+
+
+
+
     <script src="script.js"></script>
     <script src="app.js"></script>
     <script src="data.js"></script>

@@ -93,3 +93,4 @@ document.getElementById("login-button").addEventListener("click", function() {
 document.querySelector(".close-button").addEventListener("click", function() {
   document.getElementById("login-modal").style.display = "none";
 });
+
